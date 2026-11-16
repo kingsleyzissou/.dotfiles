@@ -94,6 +94,9 @@ export MANPATH="$MANPATH:$HOME/.local/share/man"
 export PATH=$PATH:$HOME/.bun/bin
 export PATH=$PATH:$HOME/.cache/.bun/bin
 
+# keybindings
+[[ $(uname) == "Linux" ]] && dconf load / < ~/.config/dconf/keybindings.dconf
+
 # use nvim
 export EDITOR="nvim"
 
@@ -112,10 +115,6 @@ export TERM=xterm-256color
 GCLOUD_SDK_PATH="$HOME/.local/lib/google-cloud-sdk"
 [[ -f "$GCLOUD_SDK_PATH/path.zsh.inc" ]] && source "$GCLOUD_SDK_PATH/path.zsh.inc"
 [[ -f "$GCLOUD_SDK_PATH/completion.zsh.inc" ]] && source "$GCLOUD_SDK_PATH/completion.zsh.inc"
-
-# ip address for ollama host
-[[ $(uname) == "Linux" ]] && [[ ! "$CONTAINER_ID" ]] && export OLLAMA_HOST="$(tailscale ip -4 mac-mini)"
-[[ $(uname) == "Darwin" ]] && export OLLAMA_HOST="127.0.0.1"
 
 # keychain
 export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
