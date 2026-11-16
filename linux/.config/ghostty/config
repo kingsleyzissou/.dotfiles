@@ -10,3 +10,4 @@ window-padding-balance = true
 window-padding-color = "extend"
 window-theme = "ghostty"
 window-decoration = false
+command = /usr/bin/zsh
