@@ -116,6 +116,9 @@ GCLOUD_SDK_PATH="$HOME/.local/lib/google-cloud-sdk"
 [[ -f "$GCLOUD_SDK_PATH/path.zsh.inc" ]] && source "$GCLOUD_SDK_PATH/path.zsh.inc"
 [[ -f "$GCLOUD_SDK_PATH/completion.zsh.inc" ]] && source "$GCLOUD_SDK_PATH/completion.zsh.inc"
 
+# tls lib for mac
+[[ $(uname) == "Darwin" ]] && export TLS_LIBRARY_PATH="$HOME/.local/lib/tls-client/tls-client-darwin-arm64-1.13.1.dylib"
+
 # keychain
 export SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
 
