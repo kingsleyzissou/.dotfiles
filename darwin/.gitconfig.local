@@ -1,13 +1,6 @@
 [user]
-	signingkey = D1A6FDBC67929DE3
   email = gianlucazuccarelli@gmail.com
   name = Gianluca Zuccarelli
-
-[commit]
-	gpgsign = true
-
-[tag]
-	gpgsign = true
 
 [credential]
   helper = osxkeychain
