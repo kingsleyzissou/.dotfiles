@@ -1,21 +1,24 @@
 {
-  "lastChangelogVersion": "0.82.0",
-  "defaultProvider": "vertex-anthropic",
-  "defaultModel": "claude-opus-4-6",
-  "defaultThinkingLevel": "high",
+  "lastChangelogVersion": "1.5.2",
+  "defaultProvider": "openai",
+  "defaultModel": "gpt-6-luna",
+  "defaultThinkingLevel": "xhigh",
   "quietStartup": true,
   "editorPaddingX": 1,
   "packages": [
-    "npm:@dreki-gg/pi-context7",
-    "../../Projects/work/extensions/main/extensions/quorum",
     "../../Projects/work/extensions/main/extensions/sandbox",
-    "../../Projects/work/extensions/main/extensions/pacifista",
-    "extensions/vertex-anthropic"
+    "git:github.com/DietrichGebert/ponytail",
+    "npm:@gotgenes/pi-autoformat",
+    "git:github.com/apmantza/pi-lens"
   ],
   "terminal": {
     "showTerminalProgress": true
   },
   "enableInstallTelemetry": false,
-  "theme": "rose-pine"
+  "theme": "rose-pine",
+  "extensionChangelogVersions": {
+    "{\"source\":\"npm:@dreki-gg/pi-context7\",\"scope\":\"user\"}": "0.2.0",
+    "{\"source\":\"npm:@gotgenes/pi-autoformat\",\"scope\":\"user\"}": "5.1.11",
+    "{\"source\":\"git:github.com/apmantza/pi-lens\",\"scope\":\"user\"}": "4.5.1"
+  }
 }
-
