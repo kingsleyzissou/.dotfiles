@@ -1,0 +1,62 @@
+{
+  "providers": {
+    "openai": {
+      "baseUrl": "https://api.enmaas.devshift.net/v1"
+    },
+    "anthropic": {
+      "baseUrl": "https://api.enmaas.devshift.net"
+    },
+    "enmaas-glm-5-3": {
+      "baseUrl": "https://api.enmaas.devshift.net/v1",
+      "api": "openai-completions",
+      "models": [
+        {
+          "id": "gpt-6.1-luna",
+          "name": "GPT Luna 6",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "contextWindow": 1000000,
+          "maxTokens": 65536,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "compat": {
+            "supportsDeveloperRole": false
+          },
+          "samplingParams": {
+            "frequency_penalty": 0,
+            "presence_penalty": 0
+          }
+        },
+        {
+          "id": "rits/zai-org/glm-5-3",
+          "name": "GLM 5.3 (EnMaaS)",
+          "reasoning": true,
+          "input": [
+            "text"
+          ],
+          "contextWindow": 1000000,
+          "maxTokens": 65536,
+          "cost": {
+            "input": 0,
+            "output": 0,
+            "cacheRead": 0,
+            "cacheWrite": 0
+          },
+          "compat": {
+            "supportsDeveloperRole": false
+          },
+          "samplingParams": {
+            "frequency_penalty": 0,
+            "presence_penalty": 0
+          }
+        }
+      ]
+    }
+  }
+}
