@@ -34,24 +34,17 @@ case "$PLATFORM" in
   darwin)
     echo "Stowing macOS configs..."
     stow --no-folding -d "$DOTFILES" -t "$HOME" darwin
-    PROJECTS_DIR="$HOME/Projects"
+    ln -sf "$DOTFILES/base/.envrc.darwin" "$HOME/.envrc"
     ;;
   linux)
     echo "Stowing Linux configs..."
     stow --no-folding -d "$DOTFILES" -t "$HOME" linux
-    # we have some custom icons here, maybe symlinking isn't the best
-    # option, but it's what we did before. This maintains the same behaviour
-    PROJECTS_DIR="$HOME/projects"
+    ln -sf "$DOTFILES/base/.envrc.linux" "$HOME/.envrc"
     ;;
   *)
     echo "Unknown platform: $PLATFORM"
     ;;
 esac
-
-# sync the main .envrc files
-mkdir -p "$PROJECTS_DIR/play"
-ln -sf "$DOTFILES/base/.envrc.main" "$HOME/.envrc"
-ln -sf "$DOTFILES/base/.envrc.play" "$PROJECTS_DIR/play/.envrc"
 
 # Make dotsync available in PATH
 mkdir -p "$HOME/bin"

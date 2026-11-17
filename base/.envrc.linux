@@ -1,0 +1,3 @@
+export GH_TOKEN="$(pass show github/token)"
+export ENMAAS_TOKEN="$(pass show enmaas/token)"
+export CTX7_TOKEN="$(pass show ctx7/token)"
