@@ -7,5 +7,6 @@ tmux/plugins
 zsh/.zsh_sessions
 zsh/.zcompdump
 zsh/.zsh_history
+zsh/archive/*
 
 .DS_store
