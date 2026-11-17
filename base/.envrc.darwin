@@ -1,0 +1,5 @@
+export OPENCODE_TOKEN=$(pass show opencode/token)
+export GH_TOKEN=$(pass show github/token)
+export CTX7_TOKEN="$(pass show ctx7/token)"
+
+export JELLYFIN_KEY="$(pass show jellyfin/token)"
