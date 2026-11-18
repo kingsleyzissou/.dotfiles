@@ -1,3 +1,2 @@
-export GH_TOKEN="$(pass show github/token)"
+source_env "$HOME/.dotfiles/base/.envrc.base"
 export ENMAAS_TOKEN="$(pass show enmaas/token)"
-export CTX7_TOKEN="$(pass show ctx7/token)"
