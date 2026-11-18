@@ -1,2 +1,7 @@
 export GH_TOKEN=$(pass show github/token)
 export CTX7_TOKEN="$(pass show ctx7/token)"
+
+# setup the mcp memory file location
+memory_dir="${XDG_DATA_HOME:-$HOME/.local/share}/pi/mcp"
+mkdir -p "$memory_dir"
+export MEMORY_FILE_PATH="$memory_dir/memory.jsonl"
