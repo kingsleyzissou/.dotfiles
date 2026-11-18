@@ -4,7 +4,7 @@
       "url": "https://mcp.context7.com/mcp",
       "enabled": true,
       "headers": {
-        "CONTEXT7_API_KEY": "{env:CTX7_TOKEN}"
+        "CONTEXT7_API_KEY": "${CTX7_TOKEN}"
       }
     },
     "codegraph": {
@@ -22,7 +22,10 @@
       "args": [
         "-y",
         "@modelcontextprotocol/server-memory"
-      ]
+      ],
+      "env": {
+        "MEMORY_FILE_PATH": "${MEMORY_FILE_PATH}"
+      }
     },
     "jira": {
       "url": "https://mcp.atlassian.com/v1/mcp",
