@@ -5,11 +5,14 @@
   "defaultThinkingLevel": "xhigh",
   "quietStartup": true,
   "editorPaddingX": 1,
+  "npmCommand": [
+    "bun"
+  ],
   "packages": [
-    "../../Projects/work/extensions/main/extensions/sandbox",
-    "git:github.com/DietrichGebert/ponytail",
     "npm:@gotgenes/pi-autoformat",
-    "git:github.com/apmantza/pi-lens"
+    "git:github.com/DietrichGebert/ponytail",
+    "git:github.com/apmantza/pi-lens",
+    "git:github.com/kingsleyzissou/extensions"
   ],
   "terminal": {
     "showTerminalProgress": true
